@@ -14,6 +14,6 @@ class NegociacaoController {
         console.log(negociacao);
         this.negociacoes.adicionar(negociacao);
         this.tableview.update(this.negociacoes);
-        this.messageView.update("Negocia��o adicionada com sucesso");
+        this.messageView.update("Negociacao adicionada com sucesso");
     }
 }

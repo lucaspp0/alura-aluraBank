@@ -17,7 +17,7 @@ class TableView extends View<Negociacoes>{
                     ${ model.getAll().map( negociacao => 
                         `
                             <tr>
-                                <td> ${negociacao.data.getDay} </td>
+                                <td> ${negociacao.data} </td>
                                 <td> ${negociacao.quantidade} </td>
                                 <td> ${negociacao.valor} </td>
                                 <td> ${negociacao.volume} </td>
