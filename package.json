@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaspp0/alura-aluraBank.git"
+  },
+  "author": "Lucas Coutinho Bezerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaspp0/alura-aluraBank/issues"
+  },
+  "homepage": "https://github.com/lucaspp0/alura-aluraBank#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
+}
