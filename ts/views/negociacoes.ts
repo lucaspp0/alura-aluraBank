@@ -3,9 +3,11 @@ class Negociacoes{
     
     public adicionar(negociacao: Negociacao): void{
         this._negociacoes.push(negociacao);
+        
     }
 
     public getAll(): Negociacao[]{
-        return [].concat('',this._negociacoes);
+        console.log( [].concat(',',this._negociacoes) );
+        return [].concat(this._negociacoes);
     }
 }

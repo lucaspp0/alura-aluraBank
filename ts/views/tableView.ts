@@ -1,6 +1,10 @@
 class TableView extends View<Negociacoes>{
     
     template(model: Negociacoes): string{
+        model.getAll().forEach( negociacao => {
+            console.log( "Data Geral: " + negociacao.data );
+            console.log( " == == " );
+        } );
         return `
             <table class="table table-hover table-bordered">
                 <thead>
@@ -17,7 +21,7 @@ class TableView extends View<Negociacoes>{
                     ${ model.getAll().map( negociacao => 
                         `
                             <tr>
-                                <td> ${negociacao.data} </td>
+                                <td> ${negociacao.data == undefined ? "" : (negociacao.data.getDate()+1) + "/" + (negociacao.data.getMonth()+1) + "/" + (negociacao.data.getFullYear()+1)} </td>
                                 <td> ${negociacao.quantidade} </td>
                                 <td> ${negociacao.valor} </td>
                                 <td> ${negociacao.volume} </td>

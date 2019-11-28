@@ -6,6 +6,7 @@ class Negociacoes {
         this._negociacoes.push(negociacao);
     }
     getAll() {
-        return [].concat('', this._negociacoes);
+        console.log([].concat(',', this._negociacoes));
+        return [].concat(this._negociacoes);
     }
 }

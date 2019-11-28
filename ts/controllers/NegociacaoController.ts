@@ -24,7 +24,6 @@ class NegociacaoController{
             parseInt(this._valorInput.value),
             new Date(this._dataInput.value)
         );
-        console.log(negociacao);
         this.negociacoes.adicionar(negociacao);
         this.tableview.update(this.negociacoes)
         this.messageView.update("Negociacao adicionada com sucesso");
